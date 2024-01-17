@@ -1,7 +1,8 @@
 import Image from 'next/image.js';
-import { Inter } from 'next/font/google';
+import  Inter  from 'next/font/google';
 import Laptopcode from "../assets/images/Laptopcode.png"
 import Navbar from '@/components/Navbar';
+import { TypeAnimation } from 'react-type-animation';
 
 
 
@@ -18,19 +19,36 @@ export default function Home() {
        <div className='grid grid-cols-1 sm:grid-cols-12 pt-[90px] '>
         <div className=' col-span-7 place-self-center text-centre sm:text-left '>
      <h1 className='text-4xl sm:text-5xl lg:text-6xl font-extrabold py-3'>
-    <span className=' text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>  Hello I'm Cynthia</span >
-      </h1>
+    <span className=' text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'> 
+     Hello I'm </span >
+     <TypeAnimation
+     sequence={[
+      'Cynthia',
+      1000, 
+      'Web Developer',
+      1000,
+      'Mobile Developer',
+      1000,
+      'UI/UX Designer',
+      1000
+    ]}
+    wrapper="span"
+    speed={40}
+    style={{ fontSize: '1em', display: 'inline-block' }}
+    repeat={Infinity}
+     />
+     </h1>
      <p className='text-[#ADB7BE] text-lg lg:text-xl py-3 '>
       As a front-end software developer, I excel at transforming design concepts into <br/>
       captivating and functional user interfaces.
      </p>
      <div className='flex gap-[16px] py-4'>
-        <button className=" rounded-lg px-6 py-3 w-full sm:w-fit  bg-white text-black hover:bg-slate-200 bg-gradient-to-br from-blue-500 via-purple-500  to-pink-500">
+        <button className=" rounded-full px-6 py-3 w-full sm:w-fit text-white bg-black hover:bg-slate-200 bg-gradient-to-br from-blue-500 via-purple-500  to-pink-500">
                 HIRE ME
               </button>
            
-        <button className="rounded-lg px-6 py-3 w-full sm:w-fit bg-white text-black hover:bg-slate-200">
-                DOWNLOAD CV
+        <button className="rounded-full px-1 py-1 w-full sm:w-fit  text-white hover:bg-slate-200  bg-gradient-to-br from-blue-500 via-purple-500  to-pink-500 ">
+                <span className='block bg-black hover:bg-slate-800 rounded-full px-5 py-2'>DOWNLOAD CV</span>
               </button>
               
           </div>  
