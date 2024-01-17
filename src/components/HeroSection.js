@@ -3,7 +3,7 @@ import Image from 'next/image.js'
 
 const HeroSection = () => {
   return (
-    <section>
+    <section className='flex min-h-screen flex-col '>
       
     </section>
   )
