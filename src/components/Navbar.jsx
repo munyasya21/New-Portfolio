@@ -2,7 +2,7 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <nav className=" flex  items-center justify-end w-[92%] mx-auto ">
+    <nav className=" flex fixed items-center justify-end w-[92%] mx-auto ">
        <div>
          <ul className='flex items-center gap-[4vw]  '>
         <li>
