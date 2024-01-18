@@ -2,16 +2,21 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <nav className="fixed w-full h-4 flex      ">
-      
-
-      
-         <div className=" hidden md:block text-[#ADB7BE] hover:text-white">
-         <ul className=' flex-wrap hidden sm:flex pt-[36px] gap-[108px] pl-36 pb-[66px]  '>
-        <li> Home</li>
-          <li>Portfolio</li>
-          <li>AboutMe</li>
-          <li>ContactMe</li>
+    <nav className=" flex  items-center justify-end w-[92%] mx-auto ">
+       <div>
+         <ul className='flex items-center gap-[4vw]  '>
+        <li>
+           <a className='hover:text-gray-500' href='#'>Home</a>
+           </li>
+          <li>
+          <a className='hover:text-gray-500'href='#'>AboutMe</a>
+          </li>
+          <li>
+          <a className='hover:text-gray-500' href='#'>My Work</a> 
+            </li>
+          <li>
+          <a className='hover:text-gray-500' href='#'>ContactMe</a> 
+            </li>
         </ul>
       </div>
       
