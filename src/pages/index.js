@@ -164,34 +164,45 @@ export default function Home() {
       {/* Projects */}
       <div className="pt-[134px]">
         <h2 className="text-center text-4xl  font-semibold tracking-[0.72px]  capitalize leading-[44px]">
-          My Projects</h2>
+          My Projects
+        </h2>
       </div>
       <div className="pl-[70px]">
-      <div className="flex w-full gap-[32px] rounded-t-xl rounded-b-xl  ">
-       <div className="pt-[55px] flex    flex-col justify-center ">
-       <Image src={drinks}
-        width={794}
-        height={780}
-        className="rounded-t-xl rounded-b-xl bg-black"
-        alt="drinks image"
-       />
-       </div>
-       <div className="pt-[55px] flex flex-col  rounded-2xl   justify-center   ">
-        <Image
-            src={tour}
-            width={794}
-            height={780}
-            className="rounded-t-xl rounded-b-xl bg-black"
-            alt="tour image"
-          />
+        <div className="flex w-full gap-[32px] rounded-t-xl rounded-b-xl  ">
+          <div className="pt-[55px] flex    flex-col justify-center ">
+            <Image
+              src={drinks}
+              width={794}
+              height={780}
+              className="rounded-t-xl rounded-b-xl bg-black"
+              alt="drinks image"
+            />
+          </div>
+          <div className="pt-[55px] flex flex-col  rounded-2xl   justify-center   ">
+            <Image
+              src={tour}
+              width={794}
+              height={780}
+              className="rounded-t-xl rounded-b-xl bg-black"
+              alt="tour image"
+            />
+          </div>
         </div>
-      
-      </div>
-      
       </div>
       {/* Email */}
-      <div>
-        
+      <div className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap4">
+        <div>
+          <h5 className="text-xl font-bold text-white my-2">Let's Connect</h5>
+          <p className="text-[#ADB7BE] mb-4 max-w-md">
+            {""}
+            I'm currently looking for new opportunities, my inbox is always
+            open. Whether you have a question or not, I'll try my best to
+            get back to you! 
+            <div className=" ">
+              
+            </div>
+          </p>
+        </div>
       </div>
     </section>
   );
