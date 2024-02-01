@@ -198,11 +198,17 @@ export default function Home() {
             I'm currently looking for new opportunities, my inbox is always
             open. Whether you have a question or not, I'll try my best to
             get back to you! 
-            <div className=" ">
-              
-            </div>
+      
           </p>
         </div>
+        <form className="flex flex-col gap-4 ">
+        <label htmlFor="email" className="text-white">Your Email</label>
+         <input 
+         type="email" 
+         id="email" 
+         required
+         placeholder="munyasyacynthia@gmail.com"/> 
+            </form>
       </div>
     </section>
   );
