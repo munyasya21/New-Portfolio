@@ -166,25 +166,32 @@ export default function Home() {
         <h2 className="text-center text-4xl  font-semibold tracking-[0.72px]  capitalize leading-[44px]">
           My Projects</h2>
       </div>
-      <div className="pl-[270px]">
-      <div className="flex w-full gap-[32px]">
-       <div className="pt-[55px] flex  rounded-2xl  flex-col justify-center ">
+      <div className="pl-[70px]">
+      <div className="flex w-full gap-[32px] rounded-t-xl rounded-b-xl  ">
+       <div className="pt-[55px] flex    flex-col justify-center ">
        <Image src={drinks}
-        width={694}
+        width={794}
         height={780}
+        className="rounded-t-xl rounded-b-xl bg-black"
         alt="drinks image"
        />
        </div>
        <div className="pt-[55px] flex flex-col  rounded-2xl   justify-center   ">
         <Image
             src={tour}
-            width={694}
+            width={794}
             height={780}
+            className="rounded-t-xl rounded-b-xl bg-black"
             alt="tour image"
           />
         </div>
+      
       </div>
       
+      </div>
+      {/* Email */}
+      <div>
+        
       </div>
     </section>
   );
