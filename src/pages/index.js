@@ -201,6 +201,9 @@ export default function Home() {
           </p>
           <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
          <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+         <div>
+         <ion-icon name="logo-github"></ion-icon>
+         </div>
         </div>
         <form className="flex flex-col gap-4 ">
           <label htmlFor="email" className="text-white">
