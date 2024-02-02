@@ -2,7 +2,7 @@
 import Image from "next/image.js";
 import Inter from "next/font/google";
 import Laptopcode from "../assets/images/Laptopcode.png";
-import Navbar from "@/components/Navbar";
+import Navbar from "../components/Navbar.jsx";
 import { TypeAnimation } from "react-type-animation";
 import lapy from "../assets/images/lapy.png";
 import tour from "../assets/images/tour.png";
@@ -40,8 +40,7 @@ export default function Home() {
             />
           </h1>
           <p className="text-[#ADB7BE] text-lg lg:text-xl py-3 ">
-            As a front-end software developer, I excel at transforming design
-            concepts into <br />
+            As a front-end software developer, I excel at transforming design concepts into <br />
             captivating and functional user interfaces.
           </p>
           <div className="flex gap-[16px] py-4">
@@ -50,9 +49,7 @@ export default function Home() {
             </button>
 
             <button className="rounded-full px-1 py-1 w-full sm:w-fit  text-white hover:bg-slate-200  bg-gradient-to-br from-blue-500 via-purple-500  to-pink-500 ">
-              <span className="block bg-black hover:bg-slate-800 rounded-full px-5 py-2">
-                DOWNLOAD CV
-              </span>
+              <span className="block bg-black hover:bg-slate-800 rounded-full px-5 py-2">DOWNLOAD CV</span>
             </button>
           </div>
         </div>
@@ -60,13 +57,7 @@ export default function Home() {
         {/* image to the right */}
         <div className="pl-[250px]  gap-[30px] place-self-center  ">
           <div className=" w-[500px] h-[500px] py-4   ">
-            <Image
-              src={Laptopcode}
-              width={500}
-              height={600}
-              className=" rounded-xl  "
-              alt="laptop code image"
-            />
+            <Image src={Laptopcode} width={500} height={600} className=" rounded-xl  " alt="laptop code image" />
           </div>
         </div>
       </div>
@@ -86,57 +77,31 @@ export default function Home() {
         </div>
         {/* Text to the right */}
         <div className="pt-[500px] pl-[150px] pr-[50px] pb-11">
-          <h2 className="  justify-center text-4xl sm:text-5xl lg:text-6xl font-extrabold py-3">
-            About Me
-          </h2>
+          <h2 className="  justify-center text-4xl sm:text-5xl lg:text-6xl font-extrabold py-3">About Me</h2>
           <p className="text-[#ADB7BE] text-lg lg:text-xl py-3 items-center justify-start  ">
-            As a Software Developer, I have expertise with a variety of
-            technologies and programming languages to plan, create, and build
-            applications and solutions, attempting to make use of extensive
-            development expertise and practical technical skills as a Software
-            Developer in a demanding position.
+            As a Software Developer, I have expertise with a variety of technologies and programming languages to plan,
+            create, and build applications and solutions, attempting to make use of extensive development expertise and
+            practical technical skills as a Software Developer in a demanding position.
           </p>
           <div className="flex">
             <div></div>
-            <button
-              role="tab"
-              aria-selected="true"
-              aria-controls="panel-1"
-              id="tab-1"
-              tabIndex={0}
-            >
+            <button role="tab" aria-selected="true" aria-controls="panel-1" id="tab-1" tabIndex={0}>
               <span className="mr-3 font-semibold hover:text-white text-[#ADB7BE] border-b border-purple-500">
                 Skills
               </span>
             </button>
-            <button
-              role="tab"
-              aria-selected="false"
-              aria-controls="panel-2"
-              id="tab-2"
-              tabIndex={1}
-            >
+            <button role="tab" aria-selected="false" aria-controls="panel-2" id="tab-2" tabIndex={1}>
               <span className="mr-3 font-semibold hover:text-white text-[#ADB7BE] border-b border-purple-500">
                 Experience
               </span>
             </button>
-            <button
-              role="tab"
-              aria-selected="false"
-              aria-controls="panel-3"
-              id="tab-3"
-              tabIndex={2}
-            >
+            <button role="tab" aria-selected="false" aria-controls="panel-3" id="tab-3" tabIndex={2}>
               <span className="mr-3 font-semibold hover:text-white text-[#ADB7BE] border-b border-purple-500">
                 Education
               </span>
             </button>
           </div>
-          <div
-            role="tabpanel"
-            id="panel-1"
-            className=" absolute invisible opacity-0 tab-panel transition duration-300"
-          >
+          <div role="tabpanel" id="panel-1" className=" absolute invisible opacity-0 tab-panel transition duration-300">
             <p>React</p>
             <p>React</p>
             <p>React</p>
@@ -195,23 +160,17 @@ export default function Home() {
           <h5 className="text-xl font-bold text-white my-2">Let's Connect</h5>
           <p className="text-[#ADB7BE] mb-4 max-w-md">
             {""}
-            I'm currently looking for new opportunities, my inbox is always
-            open. Whether you have a question or not, I'll try my best to get
-            back to you!
+            I'm currently looking for new opportunities, my inbox is always open. Whether you have a question or not,
+            I'll try my best to get back to you!
           </p>
           <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+          <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
         </div>
         <form className="flex flex-col gap-4 ">
           <label htmlFor="email" className="text-white">
             Your Email
           </label>
-          <input
-            type="email"
-            id="email"
-            required
-            placeholder="munyasyacynthia@gmail.com"
-          />
+          <input type="email" id="email" required placeholder="munyasyacynthia@gmail.com" />
         </form>
       </div>
     </section>
