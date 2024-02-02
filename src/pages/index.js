@@ -196,19 +196,23 @@ export default function Home() {
           <p className="text-[#ADB7BE] mb-4 max-w-md">
             {""}
             I'm currently looking for new opportunities, my inbox is always
-            open. Whether you have a question or not, I'll try my best to
-            get back to you! 
-      
+            open. Whether you have a question or not, I'll try my best to get
+            back to you!
           </p>
+          <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
         </div>
         <form className="flex flex-col gap-4 ">
-        <label htmlFor="email" className="text-white">Your Email</label>
-         <input 
-         type="email" 
-         id="email" 
-         required
-         placeholder="munyasyacynthia@gmail.com"/> 
-            </form>
+          <label htmlFor="email" className="text-white">
+            Your Email
+          </label>
+          <input
+            type="email"
+            id="email"
+            required
+            placeholder="munyasyacynthia@gmail.com"
+          />
+        </form>
       </div>
     </section>
   );
