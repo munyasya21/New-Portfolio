@@ -8,6 +8,7 @@ import lapy from "../assets/images/lapy.png";
 import tour from "../assets/images/tour.png";
 import drinks from "../assets/images/drinks.png";
 import Achievements from "../components/Achievements.jsx"
+import AboutSection from "../components/About.jsx";
 
 
 
@@ -21,6 +22,7 @@ export default function Home() {
 
       <div className=" flex pt-[120px] ">
         <div className="pl-[120px] pt-[120px] ">
+          
           <h1 className="text-4xl w-[800px]  sm:text-5xl lg:text-8xl font-extrabold py-3 ">
             <span className=" text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
               Hello I'm{" "}
@@ -79,96 +81,8 @@ export default function Home() {
       </div>
 
       {/* About Me */}
+      <AboutSection/>
       
-      <div className="flex ">
-        <div className=" col-span-5 pt-[200px] pb-11">
-          <div className=" w-[700px] h-[500px]  relative pl-11 ">
-            <Image
-              src={lapy}
-              width={700}
-              height={600}
-              className=" rounded-xl absolute transform "
-              alt="laptop code image"
-            />
-          </div>
-        </div>
-        {/* Text to the right */}
-        <div className="pt-[200px] pl-[150px] pr-[50px] pb-11">
-          <h2 className="  justify-center text-4xl sm:text-5xl lg:text-6xl font-extrabold py-3">
-            About Me
-          </h2>
-          <p className="text-[#ADB7BE] text-lg lg:text-xl py-3 items-center justify-start  ">
-            As a Software Developer, I have expertise with a variety of
-            technologies and programming languages to plan, create, and build
-            applications and solutions, attempting to make use of extensive
-            development expertise and practical technical skills as a Software
-            Developer in a demanding position.
-          </p>
-          <div className="flex">
-            <div></div>
-            <button
-              role="tab"
-              aria-selected="true"
-              aria-controls="panel-1"
-              id="tab-1"
-              tabIndex={0}
-            >
-              <span className="mr-3 font-semibold hover:text-white text-[#ADB7BE] border-b border-purple-500">
-                Skills
-              </span>
-            </button>
-            <button
-              role="tab"
-              aria-selected="false"
-              aria-controls="panel-2"
-              id="tab-2"
-              tabIndex={1}
-            >
-              <span className="mr-3 font-semibold hover:text-white text-[#ADB7BE] border-b border-purple-500">
-                Experience
-              </span>
-            </button>
-            <button
-              role="tab"
-              aria-selected="false"
-              aria-controls="panel-3"
-              id="tab-3"
-              tabIndex={2}
-            >
-              <span className="mr-3 font-semibold hover:text-white text-[#ADB7BE] border-b border-purple-500">
-                Education
-              </span>
-            </button>
-          </div>
-          <div
-            role="tabpanel"
-            id="panel-1"
-            className=" absolute invisible opacity-0 tab-panel transition duration-300"
-          >
-            <p>React</p>
-            <p>React</p>
-            <p>React</p>
-          </div>
-          <div
-            role="tabpanel"
-            id="panel-2"
-            className=" absolute  invisible opacity-0 tab-panel transition duration-300"
-          >
-            <p>topo</p>
-            <p>React</p>
-            <p>React</p>
-          </div>
-          <div
-            role="tabpanel"
-            id="panel-3"
-            className=" absolute invisible opacity-0  tab-panel transition duration-300"
-          >
-            <p>React</p>
-            <p>React</p>
-            <p>React</p>
-          </div>
-        </div>
-      </div>
       {/* Projects */}
       <div className="pt-[134px]">
         <h2 className="text-center text-4xl  font-semibold tracking-[0.72px]  capitalize leading-[44px]">
