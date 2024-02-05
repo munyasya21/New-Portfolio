@@ -7,6 +7,8 @@ import { TypeAnimation } from "react-type-animation";
 import lapy from "../assets/images/lapy.png";
 import tour from "../assets/images/tour.png";
 import drinks from "../assets/images/drinks.png";
+import Achievements from "../components/Achievements.jsx";
+
 
 export default function Home() {
   return (
@@ -18,7 +20,7 @@ export default function Home() {
 
       <div className=" flex pt-[120px] ">
         <div className="pl-[120px] pt-[120px] ">
-          <h1 className="text-4xl w-[800px]  sm:text-5xl lg:text-6xl font-extrabold py-3 ">
+          <h1 className="text-4xl w-[800px]  sm:text-5xl lg:text-8xl font-extrabold py-3 ">
             <span className=" text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
               Hello I'm{" "}
             </span>
@@ -70,11 +72,15 @@ export default function Home() {
           </div>
         </div>
       </div>
+      {/* Figures */}
+      <div className="pt-[300px]">
+        <Achievements/>
+      </div>
 
       {/* About Me */}
       <div className="flex ">
-        <div className=" col-span-5 pt-[500px] pb-11">
-          <div className=" w-[700px] h-[500px] py-4 relative pl-11 ">
+        <div className=" col-span-5 pt-[200px] pb-11">
+          <div className=" w-[700px] h-[500px]  relative pl-11 ">
             <Image
               src={lapy}
               width={700}
@@ -85,7 +91,7 @@ export default function Home() {
           </div>
         </div>
         {/* Text to the right */}
-        <div className="pt-[500px] pl-[150px] pr-[50px] pb-11">
+        <div className="pt-[200px] pl-[150px] pr-[50px] pb-11">
           <h2 className="  justify-center text-4xl sm:text-5xl lg:text-6xl font-extrabold py-3">
             About Me
           </h2>
@@ -191,8 +197,7 @@ export default function Home() {
       </div>
       {/* Email */}
       <div className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative">
-        <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute  top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2 ">
-        </div>
+        <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute  top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2 "></div>
         <div className="pl-[62px]">
           <h5 className="text-xl font-bold text-white my-2 ">Let's Connect</h5>
           <p className="text-[#ADB7BE] mb-4 max-w-md">
@@ -246,29 +251,33 @@ export default function Home() {
             />
           </div>
           <div className="mb-6">
-            <label htmlFor="message"
-            className="text-white block mb-2  text-sm font-medium">
-            Message
+            <label
+              htmlFor="message"
+              className="text-white block mb-2  text-sm font-medium"
+            >
+              Message
             </label>
             <textarea
-             name="message"
-             id="message"
-             className="bg-[#18191E] border pl-[10px] border-[#33353F] placeholder-[#9CA2A9] text-gray  text-lg rounded-lg  w-[670px] pt-2.5"
-             placeholder="Let's talk about..."
-             />          
+              name="message"
+              id="message"
+              className="bg-[#18191E] border pl-[10px] border-[#33353F] placeholder-[#9CA2A9] text-gray  text-lg rounded-lg  w-[670px] pt-2.5"
+              placeholder="Let's talk about..."
+            />
           </div>
           <button
-          type="submit"
-          className=" bg-purple-500 hover:bg-purple-600 text-white font-medium py-2.5 rounded-lg  w-[670px] ">Send Message
+            type="submit"
+            className=" bg-purple-500 hover:bg-purple-600 text-white font-medium py-2.5 rounded-lg  w-[670px] "
+          >
+            Send Message
           </button>
         </form>
       </div>
       {/* Footer */}
       <footer className=" border border-t-[#33353F] border-l-transparent border-r-transparent text-white">
-      <div className="container  p-12 flex justify-between">
-        <span>LOGO</span>
-        <p className=" text-slate-700">All rights reserved</p>
-      </div>
+        <div className="container  p-12 flex justify-between">
+          <span>LOGO</span>
+          <p className=" text-slate-600">All rights reserved</p>
+        </div>
       </footer>
     </section>
   );
