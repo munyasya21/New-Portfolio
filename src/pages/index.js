@@ -7,7 +7,8 @@ import { TypeAnimation } from "react-type-animation";
 import lapy from "../assets/images/lapy.png";
 import tour from "../assets/images/tour.png";
 import drinks from "../assets/images/drinks.png";
-import Achievements from "../components/Achievements.jsx";
+import Achievements from "../components/Achievements.jsx"
+
 
 
 export default function Home() {
@@ -78,6 +79,7 @@ export default function Home() {
       </div>
 
       {/* About Me */}
+      
       <div className="flex ">
         <div className=" col-span-5 pt-[200px] pb-11">
           <div className=" w-[700px] h-[500px]  relative pl-11 ">
@@ -273,7 +275,7 @@ export default function Home() {
         </form>
       </div>
       {/* Footer */}
-      <footer className=" border border-t-[#33353F] border-l-transparent border-r-transparent text-white">
+      <footer className=" border z-10 border-t-[#33353F] border-l-transparent border-r-transparent text-white">
         <div className="container  p-12 flex justify-between">
           <span>LOGO</span>
           <p className=" text-slate-600">All rights reserved</p>
