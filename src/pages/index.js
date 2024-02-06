@@ -4,13 +4,10 @@ import Inter from "next/font/google";
 import Laptopcode from "../assets/images/Laptopcode.png";
 import Navbar from "../components/Navbar.jsx";
 import { TypeAnimation } from "react-type-animation";
-import lapy from "../assets/images/lapy.png";
 import tour from "../assets/images/tour.png";
 import drinks from "../assets/images/drinks.png";
-import Achievements from "../components/Achievements.jsx"
+import Achievements from "../components/Achievements.jsx";
 import AboutSection from "../components/About.jsx";
-
-
 
 export default function Home() {
   return (
@@ -22,7 +19,6 @@ export default function Home() {
 
       <div className=" flex pt-[120px] ">
         <div className="pl-[120px] pt-[120px] ">
-          
           <h1 className="text-4xl w-[800px]  sm:text-5xl lg:text-8xl font-extrabold py-3 ">
             <span className=" text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
               Hello I'm{" "}
@@ -77,12 +73,12 @@ export default function Home() {
       </div>
       {/* Figures */}
       <div className="pt-[300px]">
-        <Achievements/>
+        <Achievements />
       </div>
 
       {/* About Me */}
-      <AboutSection/>
-      
+      <AboutSection />
+
       {/* Projects */}
       <div className="pt-[134px]">
         <h2 className="text-center text-4xl  font-semibold tracking-[0.72px]  capitalize leading-[44px]">
