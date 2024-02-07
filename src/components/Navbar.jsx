@@ -6,7 +6,7 @@ const Navbar = () => {
  
   
 
-  const closeMenu = () => setClick(false);
+  const closeMenu = () => OnClick(false);
 
   return (
     <nav className=" flex fixed items-center justify-end w-[92%] mx-auto ">
@@ -15,7 +15,7 @@ const Navbar = () => {
         <ul className="flex items-center gap-[4vw]">
           <li className="hover:text-gray-500">
             <Link
-              to="/"
+              to="home"
               spy={true}
               smooth={true}
               offset={50}
