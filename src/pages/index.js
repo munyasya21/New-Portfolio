@@ -12,14 +12,14 @@ import AboutSection from "../components/About.jsx";
 export default function Home() {
   return (
     <section className="flex  min-h-screen flex-col  mx-auto px-12 py-4  bg-black text-white">
-      <div>
+      <div id="home">
         <Navbar />
       </div>
       {/* text to the left */}
 
       <div className=" flex pt-[120px] ">
         <div className="pl-[120px] pt-[120px] ">
-          <h1 id="home" className="text-2xl w-[800px]  sm:text-5xl lg:text-6xl font-extrabold py-3 ">
+          <h1 className="text-2xl w-[800px]  sm:text-5xl lg:text-6xl font-extrabold py-3 ">
             <span className=" text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
               Hello I'm <br />
             </span>
@@ -35,7 +35,6 @@ export default function Home() {
                 1000,
               ]}
               wrapper="span"
-              speed={20}
               speed={20}
               style={{ fontSize: "1em", display: "inline-block" }}
               repeat={Infinity}
