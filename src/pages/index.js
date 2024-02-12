@@ -19,7 +19,7 @@ export default function Home() {
 
       <div className=" flex pt-[120px] ">
         <div className="pl-[120px] pt-[120px] ">
-          <h1 className="text-4xl w-[800px]  sm:text-5xl lg:text-8xl font-extrabold py-3 ">
+          <h1 className="text-4xl w-[800px]  sm:text-5xl lg:text-6xl font-extrabold py-3 ">
             <span className=" text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
               Hello I'm{" "}
             </span>
@@ -35,7 +35,7 @@ export default function Home() {
                 1000,
               ]}
               wrapper="span"
-              speed={40}
+              speed={20}
               style={{ fontSize: "1em", display: "inline-block" }}
               repeat={Infinity}
             />
@@ -59,8 +59,8 @@ export default function Home() {
         </div>
 
         {/* image to the right */}
-        <div className="pl-[250px]  gap-[30px] place-self-center  ">
-          <div className=" w-[500px] h-[500px] py-4   ">
+        <div className="pl-[50px]  gap-[30px] place-self-center  ">
+          <div className=" w-[500px] h-[600px] py-4   ">
             <Image
               src={Laptopcode}
               width={500}

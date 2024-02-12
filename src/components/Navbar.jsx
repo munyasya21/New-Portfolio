@@ -1,12 +1,11 @@
 import React from "react";
-import { Link } from "react-scroll";
+
 
 
 const Navbar = () => {
  
   
 
-  const closeMenu = () => OnClick(false);
 
   return (
     <nav className=" flex fixed items-center justify-end w-[92%] mx-auto ">
@@ -14,52 +13,21 @@ const Navbar = () => {
       <div>
         <ul className="flex items-center gap-[4vw]">
           <li className="hover:text-gray-500">
-            <Link
-              to="home"
-              spy={true}
-              smooth={true}
-              offset={50}
-              duration={500}
-              onClick={closeMenu}
-            >
-              Home
-            </Link>
+        <a href="#home"> Home</a>
           </li>
           <li className="hover:text-gray-500">
-            <Link
-              to="about me"
-              spy={true}
-              smooth={true}
-              offset={50}
-              duration={500}
-              onClick={closeMenu}
-            >
-              AboutMe
-            </Link>
+          <a href="#about">About Me</a>  
+            
           </li>
           <li className="hover:text-gray-500">
-            <Link
-              to="my work"
-              spy={true}
-              smooth={true}
-              offset={50}
-              duration={500}
-              onClick={closeMenu}
-            >
-              My Work
-            </Link>
+          <a href="#work"> My Work</a> 
+             
+           
           </li>
           <li className="hover:text-gray-500">
-            <Link
-              to="contact me"
-              spy={true}
-              smooth={true}
-              offset={50}
-              duration={500}
-              onClick={closeMenu}
-            >
-              ContactMe
-            </Link>
+          <a href="#contact">Contact Me</a> 
+            
+           
           </li>
         </ul>
       </div>
