@@ -4,7 +4,6 @@ import { Link } from "react-scroll";
 const Navbar = () => {
   const scrollTo = (scroll) => {
     const section = document?.querySelector(`#${scroll}`);
-    console.log(section);
     section.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 

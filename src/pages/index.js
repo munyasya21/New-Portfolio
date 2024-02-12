@@ -35,7 +35,7 @@ export default function Home() {
                 1000,
               ]}
               wrapper="span"
-              speed={40}
+              speed={20}
               style={{ fontSize: "1em", display: "inline-block" }}
               repeat={Infinity}
             />
