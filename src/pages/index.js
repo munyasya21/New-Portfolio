@@ -12,14 +12,14 @@ import AboutSection from "../components/About.jsx";
 export default function Home() {
   return (
     <section className="flex  min-h-screen flex-col  mx-auto px-12 py-4  bg-black text-white">
-      <div>
+      <div id="home">
         <Navbar />
       </div>
       {/* text to the left */}
 
       <div className=" flex pt-[120px] ">
         <div className="pl-[120px] pt-[120px] ">
-          <h1 id="home" className="text-2xl w-[800px]  sm:text-5xl lg:text-6xl font-extrabold py-3 ">
+          <h1 className="text-2xl w-[800px]  sm:text-5xl lg:text-6xl font-extrabold py-3 ">
             <span className=" text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
               Hello I'm <br />
             </span>
@@ -36,13 +36,13 @@ export default function Home() {
               ]}
               wrapper="span"
               speed={20}
-              speed={20}
               style={{ fontSize: "1em", display: "inline-block" }}
               repeat={Infinity}
             />
           </h1>
           <p className="text-[#ADB7BE] text-lg lg:text-xl py-3 ">
-            As a front-end software developer, I excel at transforming design concepts into <br />
+            As a front-end software developer, I excel at transforming design
+            concepts into <br />
             captivating and functional user interfaces.
           </p>
           <div className="flex gap-[16px] py-4">
@@ -51,15 +51,23 @@ export default function Home() {
             </button>
 
             <button className="rounded-full px-1 py-1 w-full sm:w-fit  text-white hover:bg-slate-200  bg-gradient-to-br from-blue-500 via-purple-500  to-pink-500 ">
-              <span className="block bg-black hover:bg-slate-800 rounded-full px-5 py-2">DOWNLOAD CV</span>
+              <span className="block bg-black hover:bg-slate-800 rounded-full px-5 py-2">
+                DOWNLOAD CV
+              </span>
             </button>
           </div>
         </div>
 
         {/* image to the right */}
-        <div className="pl-[250px]  gap-[30px] place-self-center  ">
+        <div className="pl-[50px]  gap-[30px] place-self-center  ">
           <div className=" w-[500px] h-[500px] py-4   ">
-            <Image src={Laptopcode} width={500} height={600} className=" rounded-xl  " alt="laptop code image" />
+            <Image
+              src={Laptopcode}
+              width={500}
+              height={600}
+              className=" rounded-xl  "
+              alt="laptop code image"
+            />
           </div>
         </div>
       </div>
@@ -78,8 +86,16 @@ export default function Home() {
         </h2>
       </div>
       <div className="pl-[70px]">
-        <div className="flex w-full gap-[32px] rounded-t-xl rounded-b-xl  ">
+        <div className="flex w-full gap-[32px] rounded-t-xl rounded-b-xl relative group  ">
+          <script
+            type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+          ></script>
+
           <div className="pt-[55px] flex    flex-col justify-center ">
+            <div className="h-12 w-12 mr-2 border-2 relative rounded-full bg-black border-black hover:border-black top-1/2 left-1/2  transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group-hover/link:text-black">
+              <ion-icon className="absolute" size="large" name="code-slash-outline"></ion-icon>
+            </div>
             <Image
               src={drinks}
               width={794}
@@ -88,7 +104,11 @@ export default function Home() {
               alt="drinks image"
             />
           </div>
-          <div className="pt-[55px] flex flex-col  rounded-2xl   justify-center   ">
+
+          <div className="pt-[55px] flex flex-col  rounded-2xl   justify-center ">
+            <div className="h-12 w-12 mr-2 border-2 relative rounded-full bg-black border-black hover:border-black top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group-hover/link:text-black">
+              <ion-icon size="large" name="code-slash-outline"></ion-icon>
+            </div>
             <Image
               src={tour}
               width={794}
@@ -100,28 +120,38 @@ export default function Home() {
         </div>
       </div>
       {/* Email */}
-      <div id="contact" className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative">
+      <div
+        id="contact"
+        className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative"
+      >
         <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute  top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2 "></div>
         <div className="pl-[62px]">
           <h5 className="text-xl font-bold text-white my-2 ">Let's Connect</h5>
           <p className="text-[#ADB7BE] mb-4 max-w-md">
             {""}
-            I'm currently looking for new opportunities, my inbox is always open. Whether you have a question or not,
-            I'll try my best to get back to you!
+            I'm currently looking for new opportunities, my inbox is always
+            open. Whether you have a question or not, I'll try my best to get
+            back to you!
           </p>
-          <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+          <script
+            type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+          ></script>
           <div className=" flex gap-2 w-8 h-8">
             <div className="w-8 h-8">
-              <ion-icon name="logo-github"></ion-icon>
+              <ion-icon size="large" name="logo-github"></ion-icon>
             </div>
             <div className="w-8 h-8">
-              <ion-icon name="logo-linkedin"></ion-icon>
+              <ion-icon size="large" name="logo-linkedin"></ion-icon>
             </div>
           </div>
         </div>
         <form className="flex flex-col  ">
           <div className="mb-6">
-            <label htmlFor="email" className="text-white mb-2 block text-sm font-medium">
+            <label
+              htmlFor="email"
+              className="text-white mb-2 block text-sm font-medium"
+            >
               Your Email
             </label>
             <input
@@ -133,7 +163,10 @@ export default function Home() {
             />
           </div>
           <div className="mb-6">
-            <label htmlFor="subject" className="text-white block mb-2  text-sm font-medium">
+            <label
+              htmlFor="subject"
+              className="text-white block mb-2  text-sm font-medium"
+            >
               Subject
             </label>
             <input
@@ -145,7 +178,10 @@ export default function Home() {
             />
           </div>
           <div className="mb-6">
-            <label htmlFor="message" className="text-white block mb-2  text-sm font-medium">
+            <label
+              htmlFor="message"
+              className="text-white block mb-2  text-sm font-medium"
+            >
               Message
             </label>
             <textarea
