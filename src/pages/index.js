@@ -56,7 +56,7 @@ export default function Home() {
         </div>
 
         {/* image to the right */}
-        <div className="pl-[250px]  gap-[30px] place-self-center  ">
+        <div className="pl-[50px]  gap-[30px] place-self-center  ">
           <div className=" w-[500px] h-[500px] py-4   ">
             <Image src={Laptopcode} width={500} height={600} className=" rounded-xl  " alt="laptop code image" />
           </div>
