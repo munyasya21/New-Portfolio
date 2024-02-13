@@ -94,7 +94,8 @@ export default function Home() {
 
           <div className="pt-[55px] flex    flex-col justify-center ">
             <div className="h-12 w-12 mr-2 border-2 relative rounded-full bg-black border-black hover:border-black top-1/2 left-1/2  transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group-hover/link:text-black">
-              <ion-icon className="absolute" size="large" name="code-slash-outline"></ion-icon>
+              <a target="_blank" rel="noopener" href="https://quiet-biscochitos-fb2a73.netlify.app">
+              <ion-icon className="absolute" size="large" name="code-slash-outline"></ion-icon></a>
             </div>
             <Image
               src={drinks}
@@ -103,11 +104,13 @@ export default function Home() {
               className="rounded-t-xl rounded-b-xl bg-black"
               alt="drinks image"
             />
+            
           </div>
 
           <div className="pt-[55px] flex flex-col  rounded-2xl   justify-center ">
             <div className="h-12 w-12 mr-2 border-2 relative rounded-full bg-black border-black hover:border-black top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group-hover/link:text-black">
-              <ion-icon size="large" name="code-slash-outline"></ion-icon>
+            <a target="_blank" rel="noopener" href="https://stellar-twilight-40137a.netlify.app">
+              <ion-icon size="large" name="code-slash-outline"></ion-icon></a>
             </div>
             <Image
               src={tour}
