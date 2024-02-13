@@ -77,17 +77,23 @@ export default function Home() {
         </h2>
       </div>
       <div className="pl-[70px]">
-        <div className="flex w-full gap-[32px] rounded-t-xl rounded-b-xl  ">
+        <div className="flex w-full gap-[32px] rounded-t-xl rounded-b-xl relative group  ">
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+
           <div className="pt-[55px] flex    flex-col justify-center ">
+          <ion-icon size="large" name="code-slash-outline"></ion-icon>
             <Image
               src={drinks}
               width={794}
               height={780}
               className="rounded-t-xl rounded-b-xl bg-black"
+              
               alt="drinks image"
             />
           </div>
+          
           <div className="pt-[55px] flex flex-col  rounded-2xl   justify-center   ">
+          <ion-icon size="large" name="code-slash-outline"></ion-icon>
             <Image
               src={tour}
               width={794}
@@ -96,7 +102,7 @@ export default function Home() {
               alt="tour image"
             />
           </div>
-        </div>
+          </div>
       </div>
       {/* Email */}
       <div id="contact" className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative">
@@ -111,10 +117,10 @@ export default function Home() {
           <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
           <div className=" flex gap-2 w-8 h-8">
             <div className="w-8 h-8">
-              <ion-icon name="logo-github"></ion-icon>
+              <ion-icon size="large" name="logo-github"></ion-icon>
             </div>
             <div className="w-8 h-8">
-              <ion-icon name="logo-linkedin"></ion-icon>
+              <ion-icon size="large" name="logo-linkedin"></ion-icon>
             </div>
           </div>
         </div>
