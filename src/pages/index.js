@@ -17,8 +17,8 @@ export default function Home() {
       </div>
       {/* text to the left */}
 
-      <div className=" flex pt-[120px] ">
-        <div className="pl-[120px] pt-[120px] ">
+      <div className=" flex pt-[120px] grid-cols-1 lg:grid-cols-12 ">
+        <div className="pl-[120px] pt-[120px] place-self-center col-span-7">
           <h1 className="text-2xl w-[800px]  sm:text-5xl lg:text-6xl font-extrabold py-3 ">
             <span className=" text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
               Hello I'm <br />
@@ -59,12 +59,12 @@ export default function Home() {
         </div>
 
         {/* image to the right */}
-        <div className="pl-[50px]  gap-[30px] place-self-center  ">
-          <div className=" w-[500px] h-[500px] py-4   ">
+        <div className="pl-[50px] pb-[150px] gap-[30px] place-self-center  ">
+          <div className=" w-[400px] h-[400px] py-4   ">
             <Image
               src={Laptopcode}
-              width={500}
-              height={600}
+              width={400}
+              height={400}
               className=" rounded-xl  "
               alt="laptop code image"
             />
@@ -72,7 +72,7 @@ export default function Home() {
         </div>
       </div>
       {/* Figures */}
-      <div className="pt-[300px]">
+      <div className="pt-[100px]">
         <Achievements />
       </div>
 
@@ -94,8 +94,17 @@ export default function Home() {
 
           <div className="pt-[55px] flex    flex-col justify-center ">
             <div className="h-12 w-12 mr-2 border-2 relative rounded-full bg-black border-black hover:border-black top-1/2 left-1/2  transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group-hover/link:text-black">
-              <a target="_blank" rel="noopener" href="https://quiet-biscochitos-fb2a73.netlify.app">
-              <ion-icon className="absolute" size="large" name="code-slash-outline"></ion-icon></a>
+              <a
+                target="_blank"
+                rel="noopener"
+                href="https://quiet-biscochitos-fb2a73.netlify.app"
+              >
+                <ion-icon
+                  className="absolute"
+                  size="large"
+                  name="code-slash-outline"
+                ></ion-icon>
+              </a>
             </div>
             <Image
               src={drinks}
@@ -104,13 +113,17 @@ export default function Home() {
               className="rounded-t-xl rounded-b-xl bg-black"
               alt="drinks image"
             />
-            
           </div>
 
           <div className="pt-[55px] flex flex-col  rounded-2xl   justify-center ">
             <div className="h-12 w-12 mr-2 border-2 relative rounded-full bg-black border-black hover:border-black top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group-hover/link:text-black">
-            <a target="_blank" rel="noopener" href="https://stellar-twilight-40137a.netlify.app">
-              <ion-icon size="large" name="code-slash-outline"></ion-icon></a>
+              <a
+                target="_blank"
+                rel="noopener"
+                href="https://stellar-twilight-40137a.netlify.app"
+              >
+                <ion-icon size="large" name="code-slash-outline"></ion-icon>
+              </a>
             </div>
             <Image
               src={tour}
