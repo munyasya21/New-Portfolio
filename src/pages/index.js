@@ -155,10 +155,21 @@ export default function Home() {
           ></script>
           <div className=" flex gap-2 w-8 h-8">
             <div className="w-8 h-8">
-              <ion-icon size="large" name="logo-github"></ion-icon>
+              <a
+                target="_blank"
+                rel="noopener"
+                href="https://github.com/munyasya21"
+              >
+              <ion-icon size="large" name="logo-github"></ion-icon></a>
             </div>
             <div className="w-8 h-8">
-              <ion-icon size="large" name="logo-linkedin"></ion-icon>
+              <a
+                target="_blank"
+                rel="noopener"
+                href="https://www.linkedin.com/in/cynthia-munyasya-b14676245"
+              >
+                <ion-icon size="large" name="logo-linkedin"></ion-icon>
+              </a>
             </div>
           </div>
         </div>
