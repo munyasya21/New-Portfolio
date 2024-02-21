@@ -99,7 +99,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="pt-[55px] flex flex-col  rounded-2xl   justify-center ">
+          <div className="pt-[55px] flex flex-col  hover:scale-105 transition-all ease-in-out duration-200     justify-center ">
             <div className="p-1 w-fit  grid place-content-center  border-2 relative rounded-full bg-black border-black hover:border-black top-1/2 left-1/2  transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group-hover/link:text-black">
               <a target="_blank" rel="noopener" href="https://stellar-twilight-40137a.netlify.app"className="h-fit" >
                 <ion-icon className="absolute" size="large" name="code-slash-outline"></ion-icon>
