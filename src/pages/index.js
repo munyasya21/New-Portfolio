@@ -17,9 +17,9 @@ export default function Home() {
       </div>
       {/* text to the left */}
 
-      <div className=" flex pt-[120px] grid-cols-1 lg:grid-cols-12 ">
-        <div className="pl-[120px] pt-[120px] place-self-center col-span-7">
-          <h1 className="text-2xl w-[800px]  sm:text-5xl lg:text-6xl font-extrabold py-3 ">
+      <div className=" flex  sm:pt-[70px] lg:pt-[120px] grid-cols-1 lg:grid-cols-12 ">
+        <div className="lg:pl-[120px] sm:pl-[50px] pt-[120px] place-self-center col-span-7">
+          <h1 className="text-2xl lg:w-[800px] sm:w-[full] sm:text-5xl lg:text-6xl font-extrabold py-3 ">
             <span className=" text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
               Hello I'm <br />
             </span>
@@ -65,13 +65,13 @@ export default function Home() {
         </div>
 
         {/* image to the right */}
-        <div className="pl-[50px] pb-[150px] gap-[30px] place-self-center hidden lg:block ">
-          <div className=" w-[400px] h-[400px] py-4   ">
+        <div className="pl-[50px] pb-[150px] gap-[30px] place-self-center sm:hidden lg:block ">
+          <div className=" lg:w-[400px] lg:h-[400px] py-4   ">
             <Image
               src={Laptopcode}
               width={400}
               height={400}
-              className=" rounded-xl  "
+              className=" rounded-xl   "
               alt="laptop code image"
             />
           </div>
@@ -91,7 +91,7 @@ export default function Home() {
           My Projects
         </h2>
       </div>
-      <div className="pl-[70px]">
+      <div className="lg:pl-[70px] sm:pl-[20px]">
         <div className="flex w-full gap-[32px] rounded-t-xl rounded-b-xl relative group  ">
           <script
             type="module"
@@ -153,7 +153,7 @@ export default function Home() {
         className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative"
       >
         <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute  top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2 "></div>
-        <div className="pl-[62px]">
+        <div className="lg:pl-[62px] sm:pl-[20px]">
           <h5 className="text-xl font-bold text-white my-2 ">Let's Connect</h5>
           <p className="text-[#ADB7BE] mb-4 max-w-md">
             {""}
@@ -198,7 +198,7 @@ export default function Home() {
               type="email"
               id="email"
               required
-              className="bg-[#18191E] border pl-[10px] border-[#33353F] placeholder-[#9CA2A9] text-gray  text-lg rounded-lg  w-[670px] pt-2.5"
+              className="bg-[#18191E] border pl-[10px] border-[#33353F] placeholder-[#9CA2A9] text-gray  text-lg rounded-lg sm:w-[300px] lg:w-[670px] pt-2.5"
               placeholder="munyasyacynthia@gmail.com"
             />
           </div>
@@ -213,7 +213,7 @@ export default function Home() {
               type="text"
               id="subject"
               required
-              className="bg-[#18191E] border pl-[10px] border-[#33353F] placeholder-[#9CA2A9] text-gray  text-lg rounded-lg  w-[670px] pt-2.5"
+              className="bg-[#18191E] border pl-[10px] sm:w-[300px] border-[#33353F] placeholder-[#9CA2A9] text-gray  text-lg rounded-lg lg:w-[670px] pt-2.5"
               placeholder="Just saying hi"
             />
           </div>
@@ -227,13 +227,13 @@ export default function Home() {
             <textarea
               name="message"
               id="message"
-              className="bg-[#18191E] border pl-[10px] border-[#33353F] placeholder-[#9CA2A9] text-gray  text-lg rounded-lg  w-[670px] pt-2.5"
+              className="bg-[#18191E] border pl-[10px] border-[#33353F] placeholder-[#9CA2A9] text-gray  text-lg rounded-lg  sm:w-[300px] lg:w-[670px] pt-2.5"
               placeholder="Let's talk about..."
             />
           </div>
           <button
             type="submit"
-            className=" bg-purple-500 hover:bg-purple-600 text-white font-medium py-2.5 rounded-lg  w-[670px] "
+            className=" bg-purple-500 hover:bg-purple-600 text-white font-medium py-2.5 rounded-lg sm:w-[300px] lg:w-[670px] "
           >
             Send Message
           </button>
