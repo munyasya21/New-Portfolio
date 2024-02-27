@@ -65,7 +65,7 @@ export default function Home() {
         </div>
 
         {/* image to the right */}
-        <div className="pl-[50px] pb-[150px] gap-[30px] place-self-center sm:hidden lg:block ">
+        <div className="pl-[50px] pb-[150px] gap-[30px] place-self-center sm:hidden md:hidden lg:block ">
           <div className=" lg:w-[400px] lg:h-[400px] py-4   ">
             <Image
               src={Laptopcode}
@@ -91,7 +91,7 @@ export default function Home() {
           My Projects
         </h2>
       </div>
-      <div className="lg:pl-[70px] sm:pl-[20px]">
+      <div className="lg:pl-[70px] sm:pl-[20px]  ">
         <div className="flex w-full gap-[32px] rounded-t-xl rounded-b-xl relative group  ">
           <script
             type="module"

@@ -8,7 +8,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className=" flex fixed items-center justify-end sm:pl-[50px] lg:w-[92%] mx-auto z-[1000] ">
+    <nav className=" flex fixed items-center justify-end sm:pl-[50px]  md:pl-[350px] lg:w-[92%] mx-auto z-[1000] ">
       <div>
         <ul className="flex items-center gap-[4vw]">
           <li className="hover:text-gray-500">
