@@ -8,19 +8,19 @@ const Navbar = () => {
   };
 
   return (
-    <nav className=" flex fixed items-center justify-end sm:pl-[50px]  md:pl-[350px] lg:w-[92%] mx-auto z-[1000] ">
-      <div>
-        <ul className="flex items-center gap-[4vw]">
-          <li className="hover:text-gray-500">
+    <nav className=" flex fixed items-center section justify-center w-full  sm:bg-transparent backdrop-blur-sm py-4  sm:justify-end sm:pl-[50px]  md:pl-[350px] lg:w-[100%] mx-auto z-[1000] ">
+      <div className="lg:w-[92%] md:ml-auto">
+        <ul className="flex items-center gap-4 md:gap-8 md:ml-auto w-full md:justify-end">
+          <li className="hover:text-gray-300">
             <button onClick={() => scrollTo("home")}>Home</button>
           </li>
-          <li className="hover:text-gray-500">
-            <button onClick={() => scrollTo("about")}>AboutMe</button>
+          <li className="hover:text-gray-300">
+            <button onClick={() => scrollTo("about")}>About</button>
           </li>
-          <li className="hover:text-gray-500">
+          <li className="hover:text-gray-300">
             <button onClick={() => scrollTo("work")}>My Work</button>
           </li>
-          <li className="hover:text-gray-500">
+          <li className="hover:text-gray-300">
             <button onClick={() => scrollTo("contact")}>Contact Me</button>
           </li>
         </ul>
