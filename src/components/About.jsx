@@ -2,7 +2,7 @@
 import React, { useTransition, useState } from "react";
 import Image from "next/image";
 import TabButton from "./TabButton";
-import lapy from "../assets/images/lapy.png";
+import my from "../assets/images/my.png";
 
 const TAB_DATA = [
   {
@@ -10,10 +10,20 @@ const TAB_DATA = [
     id: "skills",
     content: (
       <ul className="list-disc pl-2 ">
-        <li>JavaScript</li>
-        <li>React</li>
+        <li>Figma</li>
+        <li>React.js</li>
         <li>Next.js</li>
-        <li>Tailwind</li>
+        <li>Tailwind CSS</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Technologies",
+    id: "technologies",
+    content: (
+      <ul className="list-disc pl-2">
+        <li> </li>
+        <li>  </li>
       </ul>
     ),
   },
@@ -22,8 +32,8 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>ALX Academy </li>
-        <li> KCA University </li>
+        <li>ALX ACADEMY</li>
+        <li>KCA UNIVERSITY</li>
       </ul>
     ),
   },
@@ -52,7 +62,7 @@ const AboutSection = () => {
   return (
     <section className="text-white" id="about">
       <div id="#about" className="md:grid md:grid-cols-2 gap-8 items-center py-8  xl:gap-16 sm:py-16 xl:px-16">
-        <Image src={lapy} width={700} height={600} alt="laptop" className="rounded-xl hidden md:block transform" />
+        <Image src={my} width={600} height={600} alt="laptop" className="rounded-full hidden md:block transform" />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="justify-center text-4xl sm:text-5xl lg:text-6xl font-extrabold py-3">About Me</h2>
           <p className="text-[#ADB7BE] text-lg lg:text-xl py-3 items-center justify-start">

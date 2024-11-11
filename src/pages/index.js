@@ -1,12 +1,14 @@
 "use client";
 import Image from "next/image.js";
-import Laptopcode from "../assets/images/Laptopcode.png";
+import my from "../assets/images/my.png";
 import Navbar from "../components/Navbar.jsx";
 import { TypeAnimation } from "react-type-animation";
 import tour from "../assets/images/tour.png";
 import drinks from "../assets/images/drinks.png";
 import Achievements from "../components/Achievements.jsx";
 import AboutSection from "../components/About.jsx";
+
+
 
 
 export default function Home() {
@@ -26,11 +28,9 @@ export default function Home() {
             </span>
             <TypeAnimation
               sequence={[
-                "Cynthia",
+                "Cynthia Munyasya",
                 1000,
                 "a Web Developer",
-                1000,
-                "a Mobile Developer",
                 1000,
                 "a UI/UX Designer",
                 1000,
@@ -58,14 +58,10 @@ export default function Home() {
               </span>
             </button>
           </div>
-        </div>
+        </div>  
 
         {/* image to the right */}
-        <div className="pl-[50px] hidden md:block pb-[150px] gap-[30px] place-self-center sm:hidden  lg:block ">
-          <div className=" lg:w-[400px] lg:h-[400px] py-4   ">
-            <Image src={Laptopcode} width={400} height={400} className=" rounded-xl   " alt="laptop code image" />
-          </div>
-        </div>
+       
       </div>
       {/* Figures */}
       <div className="pt-[100px] mx-auto section">
