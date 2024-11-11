@@ -10,10 +10,8 @@ const TAB_DATA = [
     id: "skills",
     content: (
       <ul className="list-disc pl-2 ">
-        <li>Figma</li>
-        <li>React.js</li>
-        <li>Next.js</li>
-        <li>Tailwind CSS</li>
+        <li>FRONT-END DEVELOPMENT</li>
+        <li>UI/UX DESIGN</li>
       </ul>
     ),
   },
@@ -22,8 +20,11 @@ const TAB_DATA = [
     id: "technologies",
     content: (
       <ul className="list-disc pl-2">
-        <li> </li>
-        <li>  </li>
+        <li>HTML </li>
+        <li>TAILWIND CSS </li>
+        <li>NEXT.JS</li>
+        <li>REACT.JS</li>
+        <li>FIGMA</li>
       </ul>
     ),
   },
@@ -75,6 +76,10 @@ const AboutSection = () => {
             <TabButton selectTab={() => handleTabChange("skills")} active={tab === "skills"}>
               {" "}
               Skills{" "}
+            </TabButton>
+            <TabButton selectTab={() => handleTabChange("technologies")} active={tab === "technologies"}>
+              {" "}
+              Technologies{" "}
             </TabButton>
             <TabButton selectTab={() => handleTabChange("education")} active={tab === "education"}>
               {" "}
