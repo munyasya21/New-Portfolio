@@ -56,7 +56,7 @@ export default function Home() {
 
             <button className="rounded-full px-1 py-1 w-fit  text-white hover:bg-slate-200  bg-gradient-to-br from-blue-500 via-purple-500  to-pink-500 ">
               <span className="block bg-black hover:bg-slate-800 rounded-full px-5 py-2">
-                <a target="_blank" rel="noopener" href="https://salmon-zorah-50.tiiny.site">
+                <a target="_blank" rel="noopener" href="https://salmon-katti-15.tiiny.site">
                   DOWNLOAD CV
                 </a>
               </span>
