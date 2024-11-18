@@ -5,6 +5,8 @@ import Navbar from "../components/Navbar.jsx";
 import { TypeAnimation } from "react-type-animation";
 import barabara from "../assets/images/barabara.png";
 import blesket from "../assets/images/blesket.png";
+import glendale from "../assets/images/glendale.png";
+import pallax from "../assets/images/pallax.png";
 import tour from "../assets/images/tour.png";
 import drinks from "../assets/images/drinks.png";
 import Achievements from "../components/Achievements.jsx";
@@ -132,6 +134,65 @@ export default function Home() {
             </div>
             <Image
               src={blesket}
+              width={794}
+              height={780}
+              className="rounded-t-xl rounded-b-xl bg-black"
+              alt="tour image"
+            />
+          </div>
+        </div>
+      </div>
+      <div className="lg:pl-[70px] sm:pl-[20px] mx-auto section ">
+        <div className="flex w-full gap-[32px] rounded-t-xl rounded-b-xl relative group  ">
+          <div className="pt-[55px] flex  hover:scale-105 transition-all ease-in-out duration-200  flex-col justify-center ">
+            <div className="p-1 w-fit  grid place-content-center  border-2 relative rounded-full bg-black border-black hover:border-black top-1/2 left-1/2  transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group-hover/link:text-black">
+              <a target="_blank" rel="noopener" href="https://www.glendale-engineering.co.ke/" className="h-fit">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"
+                  />
+                </svg>
+              </a>
+            </div>
+            <Image
+              src={glendale}
+              width={794}
+              height={780}
+              className="rounded-t-xl rounded-b-xl bg-black"
+              alt="drinks image"
+            />
+          </div>
+
+          <div className="pt-[55px] flex flex-col  hover:scale-105 transition-all ease-in-out duration-200     justify-center ">
+            <div className="p-1 w-fit  grid place-content-center  border-2 relative rounded-full bg-black border-black hover:border-black top-1/2 left-1/2  transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group-hover/link:text-black">
+              <a target="_blank" rel="noopener" href="https://pallax-ke.com/" className="h-fit">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"
+                  />
+                </svg>
+              </a>
+            </div>
+            <Image
+              src={pallax}
               width={794}
               height={780}
               className="rounded-t-xl rounded-b-xl bg-black"
